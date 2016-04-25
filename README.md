@@ -8,18 +8,16 @@ Use *Unscrambler*&mdash; it's dictionary of 355,000 English words will quickly f
 
 *Unscrambler* is very bare-bones and is probably my only project without any CSS styling&mdash; it's not the prettiest, but it's quick and light.
 
-### Features
-- Unscramble a word
-
+### Unscramble a word
 ![Unscramble!](http://imgur.com/stVEFhyl.png)
-- Check if a word exists
 
+### Check if a word exists
 ![Check if a word exists!](http://imgur.com/7caTwCil.png)
-- Find anagrams
 
+### Find anagrams
 ![Find anagrams!](http://imgur.com/bYULXRjl.png)
-- Game: unscramble a word
 
+### Game: unscramble a word
 ![Play the game!](http://imgur.com/T3upDSwl.png)
 
 ### Sources
