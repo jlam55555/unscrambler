@@ -21,5 +21,5 @@ Use *Unscrambler*&mdash; it's dictionary of 355,000 English words will quickly f
 ![Play the game!](http://imgur.com/T3upDSwl.png)
 
 ### Sources
-- Shuffling algorithm (used in the game): (Fisher-Yates algorithm)[https://bost.ocks.org/mike/shuffle/]
+- Shuffling algorithm (used in the game): [Fisher-Yates algorithm](https://bost.ocks.org/mike/shuffle/)
 - Words: [english-words](https://github.com/dwyl/english-words) on GitHub (see [their credits](https://github.com/dwyl/english-words/blob/master/word_list_moby_credits.txt))
