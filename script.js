@@ -32,7 +32,15 @@ $(function() {
 		var length = keys.length;
 		random.click(function() {
 			random_word = keys[Math.floor(Math.random() * length)];
-			random_output.text("Random word: " + random_word + "; " + words[random_word].length + " possibilities");
+			// shuffle algorithm adapted from https://bost.ocks.org/mike/shuffle/ (Fisher-Yates algorithm)
+			var random_word_array = random_word.split(""), m = random_word_array.length, t, i;
+			while(m) {
+				i = Math.floor(Math.random() * m--);
+				t = random_word_array[m];
+				random_word_array[m] = random_word_array[i];
+				random_word_array[i] = t;
+			}
+			random_output.text("Random word: " + random_word_array.join("") + "; " + words[random_word].length + " possibilit" + (words[random_word].length == 1 ? "y" : "ies"));
 		});
 		random.click();
 		random_input.blur(function() {
