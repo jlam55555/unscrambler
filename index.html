@@ -1,11 +1,25 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Unscrambler &mdash; THL</title>
+		<title>Word unscrambler</title>
 		<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
 		<script src="script.js"></script>
+    <link rel="stylesheet" href="./main.css">
 	</head>
 	<body>
 		<div id="loading">Loading words&hellip;</div>
+    <div class="hidden" id="loaded">
+			<h3>Enter a scrambled word to get it descrambled or enter a word to find anagrams:</h3>
+			<input type="text" id="input" placeholder="Scrambled word" />
+			<div id="output">Enter a scrambled word</div>
+			<hr />
+			<h3>Try to unscramble a word</h3>
+			<button id="random">Random Scrambled Word</button>
+			<input id="random_input" type="text" />
+			<div id="random_output"></div>
+			<hr />
+			<h3>Source</h3>
+			<div id="citation">Source of words is from <a href="https://github.com/dwyl/english-words">english-words on GitHub</a>. See the citation <a href="https://github.com/dwyl/english-words/blob/master/word_list_moby_credits.txt">here</a>.</div>
+    </div>
 	</body>
 </html>

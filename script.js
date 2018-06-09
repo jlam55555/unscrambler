@@ -2,20 +2,8 @@ $(function() {
 	var words = {};
 	$.getJSON("words.json", function(json) {
 		words = json;
-		$("div#loading").remove();
-		$("body").append(`
-			<h3>Enter a scrambled word to get it descrambled or enter a word to find anagrams:</h3>
-			<input type="text" id="input" placeholder="Scrambled word" />
-			<div id="output">Enter a scrambled word</div>
-			<hr />
-			<h3>Try to unscramble a word</h3>
-			<button id="random">Random Scrambled Word</button>
-			<input id="random_input" type="text" />
-			<div id="random_output"></div>
-			<hr />
-			<h3>Source</h3>
-			<div id="citation">Source of words is from <a href="https://github.com/dwyl/english-words">english-words on GitHub</a>. See the citation <a href="https://github.com/dwyl/english-words/blob/master/word_list_moby_credits.txt">here</a>.</div>
-		`);
+		$("div#loading").addClass("hidden");
+    $("div#loaded").removeClass("hidden");
 		var output = $("div#output");
 		var input = $("input#input");
 		var random = $("button#random");
